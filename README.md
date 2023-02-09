@@ -25,6 +25,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Esse projeto utiliza javaScript puro para manipular datas e cria uma contagem regressiva.
+Esse projeto é uma calculadora feita utilizando javaScript puro para realisar os calculos
 
  <h3 align="center"> Developed by <a href="https://www.linkedin.com/in/gabriel-santos-bb4a10188/">Gabriel Santos</a> ☕</h3>
