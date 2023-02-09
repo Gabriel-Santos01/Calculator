@@ -17,73 +17,77 @@
       rel="stylesheet" />
   </head>
   <body>
-    <form class="calculator">
-      <div class="result">
+    <form id="calculator" name="Calculator">
+      <div class="display">
         <i class="ph-equals"></i>
         <div class="side-result">
-          <span>1 + 1</span>
-          <p id="result">2</p>
+          <span id="sums"></span>
+          <p id="result"></p>
         </div>
       </div>
 
-      <div class="key clear-isntance"><p>CE</p></div>
-      <div class="key clear-all"><p>C</p></div>
-      <div class="key">
+      <button class="key clear-isntance"><p>CE</p></button>
+      <button class="key clear-all" onclick="clearAll('')"><p>C</p></button>
+      <button class="key" value="%" onclick="insert('%')">
         <i class="ph-percent"></i>
-      </div>
-      <div class="key operators">
+      </button>
+      <button class="key operators" value="/" onclick="insert('/')">
         <i class="ph-divide"></i>
-      </div>
-      <div class="key">
+      </button>
+      <button class="key" value="7" onclick="insert('7')">
         <i class="ph-number-seven"></i>
-      </div>
-      <div class="key">
+      </button>
+      <button class="key" value="8" onclick="insert('8')">
         <i class="ph-number-eight"></i>
-      </div>
-      <div class="key">
+      </button>
+      <button class="key" value="9" onclick="insert('9')">
         <i class="ph-number-nine"></i>
-      </div>
-      <div class="key operators">
+      </button>
+      <button class="key operators" value="*" onclick="insert('*')">
         <i class="ph-x"></i>
-      </div>
-      <div class="key">
+      </button>
+      <button class="key" value="4" onclick="insert('4')">
         <i class="ph-number-four"></i>
-      </div>
-      <div class="key">
+      </button>
+      <button class="key" value="5" onclick="insert('5')">
         <i class="ph-number-five"></i>
-      </div>
-      <div class="key">
+      </button>
+      <button class="key" value="6" onclick="insert('6')">
         <i class="ph-number-six"></i>
-      </div>
-      <div class="key operators">
+      </button>
+      <button class="key operators" value="-" onclick="insert('-')">
         <i class="ph-minus"></i>
-      </div>
-      <div class="key">
+      </button>
+      <button class="key" value="1" onclick="insert('1')">
         <i class="ph-number-one"></i>
-      </div>
-      <div class="key">
+      </button>
+      <button class="key" value="2" onclick="insert('2')">
         <i class="ph-number-two"></i>
-      </div>
-      <div class="key">
+      </button>
+      <button class="key" value="3" onclick="insert('3')">
         <i class="ph-number-three"></i>
-      </div>
-      <div class="key operators">
+      </button>
+      <button class="key operators" value="+" onclick="insert('+')">
         <i class="ph-plus"></i>
-      </div>
-      <div class="key">
+      </button>
+      <button class="key" value="+-" onclick="insert('+-')">
         <i class="ph-plus-minus"></i>
-      </div>
-      <div class="key">
+      </button>
+      <button class="key" value="0" onclick="insert('0')">
         <i class="ph-number-zero"></i>
-      </div>
-      <div class="key">
+      </button>
+      <button class="key" value="." onclick="insert('.')">
         <p>.</p>
-      </div>
-      <button class="key operators">
+      </button>
+      <button class="key operators" value="=" onclick="Calc()">
         <i class="ph-equals"></i>
       </button>
     </form>
+    <div id="tsparticles"></div>
   </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-snow@2/tsparticles.preset.snow.bundle.min.js"></script>
   <script src="./assets/app.js"></script>
+
   <script src="https://unpkg.com/phosphor-icons"></script>
 </html>
