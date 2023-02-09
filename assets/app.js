@@ -30,6 +30,11 @@ function Calc() {
     particles: {
       shape: {
         type: 'circle'
+      },
+      updaters: {
+        color: {
+          value: '#00ffff'
+        }
       }
     },
     preset: 'snow'
